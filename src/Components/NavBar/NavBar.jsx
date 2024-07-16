@@ -1,25 +1,39 @@
+// src/Components/NavBar/NavBar.jsx
 /* eslint-disable react/prop-types */
-import AboutEn from "../About/AboutEn";
-import ContactEn from "../Contact/ContactEn";
-import ProjectsEn from "../Projects/ProjectsEn";
+import { Link } from "react-scroll";
 import "./NavBar.css";
 
-function NavBar({ onComponentChange }) {
+function NavBar() {
   return (
     <div className="navBar">
       <header className="header-container">
-        <a className="home" onClick={() => onComponentChange(<AboutEn />)}>
+        <Link
+          className="home"
+          to="about"
+          spy={true}
+          smooth={true}
+          duration={500}
+        >
           About
-        </a>
-        <a
+        </Link>
+        <Link
           className="projects"
-          onClick={() => onComponentChange(<ProjectsEn />)}
+          to="project"
+          spy={true}
+          smooth={true}
+          duration={500}
         >
           Projects
-        </a>
-        <a className="contact" onClick={() => onComponentChange(<ContactEn />)}>
+        </Link>
+        <Link
+          className="contact"
+          to="contact"
+          spy={true}
+          smooth={true}
+          duration={500}
+        >
           Contact
-        </a>
+        </Link>
       </header>
     </div>
   );

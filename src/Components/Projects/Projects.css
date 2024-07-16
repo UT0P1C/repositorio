@@ -1,30 +1,75 @@
-/* GitHubRepositories.css */
-
 .repositories-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.repositories-container h1 {
+  margin-bottom: 32px;
+}
+
+.slider-container {
+  margin-bottom: 20px;
+}
+
+.slick-slide {
+  outline: none; /* Remove a borda de foco padrão */
+}
+
+.card {
+  background-color: #222;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 0 auto; /* Centraliza horizontalmente */
+  width: 90%; /* Ajuste a largura conforme necessário */
+  max-width: 600px; /* Limita a largura máxima do card */
+  text-align: center; /* Centraliza o conteúdo dentro do card */
+}
+
+.card h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.card a {
+  color: #9c38f8;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.navigation-buttons {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
   margin-top: 20px;
 }
 
-.repositories-list {
-  list-style: none;
-  padding: 0;
-  text-align: center;
+.nav-button {
+  background-color: #9c38f8;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 0 10px;
+  transition: background-color 0.3s;
 }
 
-.repositories-list li {
-  margin: 10px 0;
-  font-size: 24px;
-}
-
-.repositories-list li a {
-  color: #fff;
-  text-decoration: none;
-  transition: color 0.3s;
-}
-
-.repositories-list li a:hover {
-  color: #9c38f8;
+.nav-button:hover {
+  background-color: #7a2cbb;
 }

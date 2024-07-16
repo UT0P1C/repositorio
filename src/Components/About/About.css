@@ -1,4 +1,7 @@
+/* about.css */
+
 .about {
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -6,7 +9,43 @@
 }
 
 .text-container {
-  max-width: 800px;
+  max-width: 1000px;
+  text-align: start;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.typing-text {
+  display: inline-block;
+  white-space: pre-wrap;
+  overflow: hidden;
+  animation: typing 0.5s steps(30, end), blink-caret 0.5s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-right-color: transparent;
+  }
+  50% {
+    border-right-color: black;
+  }
 }
 
 .about h2 {
@@ -22,7 +61,6 @@
 .about p {
   font-size: 20px;
   line-height: 1.8;
-  text-align: start;
   padding: 20px;
   margin-left: 2px;
   margin-right: 36px;
@@ -34,26 +72,7 @@
   border-radius: 50%;
   object-fit: cover;
   position: absolute;
-  right: 100px; /* Ajuste a posição conforme necessário */
-  top: 50%; /* Ajuste a posição conforme necessário */
+  right: 100px;
+  top: 50%;
   transform: translateY(-50%);
-}
-
-/* about.css */
-
-.title {
-  font-size: 36px;
-  font-weight: bold;
-  color: #333;
-  text-align: center;
-  margin-bottom: 20px;
-  text-transform: uppercase;
-}
-
-.typing-text {
-  display: inline-block;
-  white-space: pre-wrap;
-  overflow: hidden;
-  animation: typing 0.5s steps(30, end),
-    /* increasing stagger */ blink-caret 0.5s step-end infinite; /*certain items in */
 }

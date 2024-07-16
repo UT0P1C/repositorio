@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  gap: 20px; /* Espaço entre os componentes */
 }
 
 .language-options {
@@ -32,4 +33,16 @@ footer {
   padding: 15px 0;
   position: fixed; /* Fixa o footer no final da tela */
   bottom: 0; /* Coloca o footer no final da tela */
+}
+
+/* Linha de separação entre os componentes */
+.divider {
+  width: 100%;
+  height: 2px;
+  background-color: #ffffff;
+}
+
+.section {
+  scroll-snap-align: start;
+  padding: 20px;
 }
