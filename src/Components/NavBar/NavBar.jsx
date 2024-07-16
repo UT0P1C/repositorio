@@ -14,7 +14,7 @@ function NavBar() {
           smooth={true}
           duration={500}
         >
-          About
+          Sobre
         </Link>
         <Link
           className="projects"
@@ -23,7 +23,7 @@ function NavBar() {
           smooth={true}
           duration={500}
         >
-          Projects
+          Projetos
         </Link>
         <Link
           className="contact"
@@ -32,7 +32,7 @@ function NavBar() {
           smooth={true}
           duration={500}
         >
-          Contact
+          Contato
         </Link>
       </header>
     </div>
