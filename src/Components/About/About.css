@@ -24,7 +24,7 @@
   line-height: 1.8;
   text-align: start;
   padding: 20px;
-  margin-left: 10px;
+  margin-left: 2px;
   margin-right: 36px;
 }
 
@@ -34,7 +34,7 @@
   border-radius: 50%;
   object-fit: cover;
   position: absolute;
-  right: 200px; /* Ajuste a posição conforme necessário */
+  right: 100px; /* Ajuste a posição conforme necessário */
   top: 50%; /* Ajuste a posição conforme necessário */
   transform: translateY(-50%);
 }
