@@ -38,11 +38,6 @@ function About() {
         <p>
           <span className="typing-text">{displayText}</span>
         </p>
-        <img
-          src="https://avatars.githubusercontent.com/u/34144900?v=4"
-          alt="my profile picture"
-          className="profile-image"
-        />
       </div>
       <span className="line"></span>
     </div>
