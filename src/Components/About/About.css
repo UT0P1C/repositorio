@@ -1,20 +1,24 @@
-/* about.css */
-
 .about {
-  height: 100vh;
+  min-height: 100vh; /* Garante que o componente ocupe pelo menos toda a altura da tela */
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   padding: 20px;
+  position: relative; /* Permite posicionar o .text-container de forma absoluta */
 }
 
 .text-container {
   max-width: 1000px;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box; /* Garante que o padding não aumente a largura */
   text-align: start;
+  z-index: 1; /* Garante que o texto esteja acima de outros elementos */
 }
 
 .title {
-  font-size: 36px;
+  font-size: 1.5em;
   font-weight: bold;
   color: #333;
   text-align: center;
@@ -72,7 +76,19 @@
   border-radius: 50%;
   object-fit: cover;
   position: absolute;
-  right: 100px;
+  right: 20px; /* Posição ajustada para ser responsiva */
   top: 50%;
   transform: translateY(-50%);
+}
+
+@media (max-width: 768px) {
+  .text-container {
+    padding: 10px; /* Reduz o padding para telas menores */
+  }
+
+  .about img {
+    width: 200px; /* Reduz o tamanho da imagem para telas menores */
+    height: 200px;
+    right: 10px; /* Ajusta a posição da imagem */
+  }
 }

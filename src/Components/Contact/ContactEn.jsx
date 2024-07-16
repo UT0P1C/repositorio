@@ -1,13 +1,17 @@
 // src/components/ContactEn.jsx
 import "./Contact.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLinkedin, faGithub, faTwitter } from "@fortawesome/free-brands-svg-icons";
+import {
+  faLinkedin,
+  faGithub,
+  faTwitter,
+} from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 const ContactEn = () => {
   return (
     <div className="main-container">
-      <h2 className="title">Contact Me :D</h2>
+      <h2 className="title">Me chame para conversar :D</h2>
       <ul className="social-links">
         <li>
           <a

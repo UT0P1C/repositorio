@@ -1,5 +1,5 @@
 .repositories-container {
-  max-width: 800px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 20px;
   text-align: center;
@@ -14,7 +14,7 @@
 }
 
 .slick-slide {
-  outline: none; /* Remove a borda de foco padrão */
+  outline: none;
 }
 
 .card {
@@ -22,10 +22,10 @@
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  margin: 0 auto; /* Centraliza horizontalmente */
-  width: 90%; /* Ajuste a largura conforme necessário */
-  max-width: 600px; /* Limita a largura máxima do card */
-  text-align: center; /* Centraliza o conteúdo dentro do card */
+  margin: 0 auto;
+  width: 90%;
+  max-width: 800px; /* Aumenta a largura máxima do card para telas maiores */
+  text-align: center;
 }
 
 .card h2 {
@@ -72,4 +72,15 @@
 
 .nav-button:hover {
   background-color: #7a2cbb;
+}
+
+.title {
+  font-size: 1.5em;
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 100%; /* Ajusta a largura para ocupar toda a largura disponível em telas menores */
+    max-width: 100%;
+  }
 }

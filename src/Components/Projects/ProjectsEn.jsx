@@ -65,7 +65,7 @@ const ProjectsEn = () => {
 
   return (
     <div className="repositories-container">
-      <h1>My GitHub Projects</h1>
+      <h1 className="title">Alguns projetos do meu Github</h1>
       <div className="slider-container">
         <Slider {...settings}>
           {repositories.map((repo, index) => (
