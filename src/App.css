@@ -1,0 +1,35 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.language-options {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.language-options span {
+  margin: 0 10px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  transition: color 0.3s;
+}
+
+.language-options span:hover {
+  color: #9c38f8;
+}
+
+footer {
+  font-size: 14px;
+  width: 100%;
+  background-color: #151515;
+  color: #ffffff;
+  text-align: center;
+  padding: 15px 0;
+  position: fixed; /* Fixa o footer no final da tela */
+  bottom: 0; /* Coloca o footer no final da tela */
+}
